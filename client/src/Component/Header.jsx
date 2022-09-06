@@ -11,6 +11,7 @@ function Header() {
             <div className='Header_text'>
                 <span className='spann'>Home</span>
                 <span className='spann'>How it works</span>
+                
                 <button className='btn'>SIGN IN</button>
             </div>
        </div>

@@ -5,15 +5,15 @@ import Signin from './Signin'
 import './Landingpage.css'
 import SignUp from './SignUp'
 
-function Landingpage() {
+function SignUpPage () {
   return (
     <div className='container-fluid bg'>
-        <div className='container dfj '>
-            <Signin />
-            <About />
-        </div>
+      <div className='container dfj '>
+        <SignUp />
+        <About />
+      </div>
     </div>
   )
 }
 
-export default Landingpage
+export default SignUpPage;
