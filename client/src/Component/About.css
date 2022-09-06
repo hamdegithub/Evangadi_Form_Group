@@ -1,0 +1,11 @@
+.hbtn{
+    background-color: rgb(243, 135, 11);
+    color: white;
+    border-radius: 7px;
+    border: none;
+    width: 200px;
+}
+
+.about h5{
+    color: rgb(243, 135, 11);
+}

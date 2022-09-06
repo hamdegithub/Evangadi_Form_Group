@@ -1,0 +1,16 @@
+.ftr{
+    background-color: rgb(58, 58, 58);
+    position: absolute;
+    color: white;
+    margin-top: 30px;
+}
+
+.ftr_div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ftr_lnk{
+    opacity: 0.3;
+}
