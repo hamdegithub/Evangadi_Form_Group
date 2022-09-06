@@ -13,22 +13,23 @@
     border-radius: 4px;
 }
 
-.signbtn{
+.signbtn {
     border-radius: 4px;
-    width: 100%;
+    width: 60%;
     color: white;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: rgb(243, 135, 11);
     border: none;
     padding: 7px 0;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     font-size: 1.1em;
 
 }
 
-.signbtn:hover{
+.signbtn:hover {
     background-color: rgb(243, 135, 11);
 }
 
-.forget{
+.forget {
     text-align: right;
 }
