@@ -1,0 +1,11 @@
+.sup {
+    margin-top: 90px;
+}
+
+.sup > button:hover {
+    background-color: orange;
+}
+
+.beh {
+    margin-right: 620px;
+}
