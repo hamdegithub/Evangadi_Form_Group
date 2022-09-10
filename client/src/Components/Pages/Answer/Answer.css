@@ -1,0 +1,12 @@
+.s {
+    margin-top: 90px;
+}
+
+.ssup {
+    margin-top: 150px;
+}
+
+.bosbaby > button:hover {
+    background-color: orange;
+    border: none;
+}

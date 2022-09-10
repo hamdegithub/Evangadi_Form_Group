@@ -7,6 +7,8 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Home from './Components/Pages/Home/Home';
 import Login from './Components/Pages/LogIN/Login';
 import Signin from './Components/Pages/SignIN/Signin';
+import Question from './Components/Pages/Question/Question';
+import Answer from './Components/Pages/Answer/Answer'
 
 const App = () => {
   const [userData, setUserData] = useContext(UserContext);
@@ -64,9 +66,11 @@ const App = () => {
       <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signin />} />
+      <Route path="/question" element={<Question />} />
+      <Route path="/answer" element={<Answer />} />
 
        {/* Passing logout function as a props */}
-      <Route path='/' element={<Home logout={logout} />} />
+      <Route index element={<Home logout={logout} />} />
       </Routes>
 
       <Footer />

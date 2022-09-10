@@ -36,6 +36,7 @@
 
 .form > button:hover {
     background-color: orange;
+    border: none;
 }
 
 .stt{

@@ -1,5 +1,11 @@
 .sup {
     margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.sup > button {
+    padding: 0 10px 0;
+    border: none;
 }
 
 .sup > button:hover {
@@ -8,4 +14,8 @@
 
 .beh {
     margin-right: 620px;
+}
+
+.mxf {
+    margin: 0 120px;
 }

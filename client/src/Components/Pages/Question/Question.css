@@ -1,0 +1,21 @@
+.mt-g {
+    margin-top: 120px;
+}
+
+.middle {
+    margin-left: 420px;
+    margin-bottom: 100px;
+}
+
+.sesi {
+    padding: 10px 860px 10px 20px;
+}
+
+.sest {
+    padding-left: 20px;
+}
+
+.abeb > button:hover {
+    background-color: orange;
+    border: none;
+}

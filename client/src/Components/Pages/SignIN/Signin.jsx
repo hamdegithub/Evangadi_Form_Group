@@ -78,7 +78,7 @@ const Signin = () => {
                 <nav className='sup'>
                     <h5 className='aa text-center'>Join the Network</h5>
                     <form className='form'>
-                        <p className='text-center'>Already have an account? <Link to='/signup' className='text-warning stt'>Sign IN</Link></p>
+                        <p className='text-center'>Already have an account? <Link to='/login' className='text-warning stt'>Sign IN</Link></p>
                         <input type="email" placeholder="Email address" className='overflow-visible form-control mb-2' value={email} onChange={e => { setemail(e.target.value); handleChange() }}></input>
                         <div className="d-flex">
                             <input type="text" placeholder="First Name" className='overflow-visible form-control mb-2 me-2' value={fname} onChange={e => { setF(e.target.value); handleChange() }} /><input type="text" placeholder="Last Name" className='overflow-visible form-control mb-2' value={lname} onChange={e => { setL(e.target.value); handleChange() }} />

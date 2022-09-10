@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './Footer.css';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 // Importing Images
 import logo2 from '../Resources/logo2.png';
@@ -19,15 +22,15 @@ const Footer = () => {
                                         <Link to="/" className="text-decoration-none text-black"><img src={logo2} alt="Evangadi Logo" className='padding' /></Link>
                                     </div>
                                 </div>
-                                <ul className="footer-social-list lists list-inline d-flex ms-5">
+                                <ul className="footer-social-list lists list-inline d-flex ms-4">
                                     <li>
-                                        <Link to="/" className='hov'><button className="btn py-0 border fw-bolder rounded-5 text-white">f</button></Link>
+                                        <Link to="/"><button className="btn py-0 border fw-bolder rounded-5 text-white"><FacebookIcon /></button></Link>
                                     </li>
                                     <li>
-                                        <Link to="/" className='mx-4 hov'><button className="btn py-0 border fw-bolder rounded-5 text-white">T</button></Link>
+                                        <Link to="/" className='mx-4'><button className="btn py-0 border fw-bolder text-white"><InstagramIcon /></button></Link>
                                     </li>
                                     <li>
-                                        <Link to="/" className='hov'><button className="btn py-0 border fw-bolder rounded-5 text-white">In</button></Link>
+                                        <Link to="/"><button className="btn py-0 border fw-bolder rounded-5 text-white"><LinkedInIcon /></button></Link>
                                     </li>
                                 </ul>
                             </div>

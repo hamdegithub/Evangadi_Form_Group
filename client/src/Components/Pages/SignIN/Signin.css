@@ -113,9 +113,11 @@
 
 .about > button {
     background-color: orange;
+    border: none;
 }
 
 .about > button:hover {
     background-color: orange;
+    border: none;
 }
 

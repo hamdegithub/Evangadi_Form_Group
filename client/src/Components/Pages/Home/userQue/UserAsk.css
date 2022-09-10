@@ -1,0 +1,24 @@
+.suplex {
+    max-width: 110px;
+    height: 110px;
+}
+
+.ques {
+    margin-top: 39px;
+}
+
+.borde {
+    border-top: 2px solid gray;
+}
+
+.w {
+    width: 90%;
+}
+
+.h {
+    width: 10%;
+}
+
+.ss:hover {
+    text-decoration: underline;
+}
