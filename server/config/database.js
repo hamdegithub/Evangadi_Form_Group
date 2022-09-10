@@ -25,10 +25,10 @@ let profile = `CREATE TABLE if not exists profile(
     FOREIGN KEY (user_id) REFERENCES registration(user_id)
 )`;
 
-let question = `CREATE TABLE if not exists Question(
+let question = `CREATE TABLE if not exists question(
     question_id int auto_increment,
+    post_id int not null,
     user_id int not null,
-    post_id varchar(255) not null,
     question varchar(255) not null,
     question_description varchar(255),
     question_tag varchar(1000000),
@@ -48,7 +48,7 @@ let answer = `CREATE TABLE if not exists Answer(
 )`;
 
 pool.query(registration, (err) => {
-    if (err) throw err;
+    if (err) console.log(err);
     console.log('registration table created');
 })
 pool.query(profile, (err) => {
