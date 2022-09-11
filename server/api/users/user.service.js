@@ -1,3 +1,5 @@
+
+
 const pool = require('../../config/database');
 
 module.exports = {
@@ -55,15 +57,6 @@ module.exports = {
             }
             return callback(null, result[0]);
         })
-    },
-    getAllUsers: (callback) => {
-
-        //getting the user-info by using email
-        pool.query(`SELECT user_id,user_name,user_email FROM registration`, [], (err, result) => {
-            if (err) {
-                return callback(err);
-            }
-            return callback(null, result);
-        })
     }
 }
+

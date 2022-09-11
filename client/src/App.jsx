@@ -5,10 +5,11 @@ import Header from './Components/Views/Header';
 import axios from 'axios';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Home from './Components/Pages/Home/Home';
-import Login from './Components/Pages/LogIN/Login';
+import LogSign from './Components/Pages/LogSign/LogSign';
 import Signin from './Components/Pages/SignIN/Signin';
-import Question from './Components/Pages/Question/Question';
+// import Question from './Components/Pages/Question/Question';
 import Answer from './Components/Pages/Answer/Answer'
+import NewQuestion from './Components/Pages/Question/NewQuestion';
 
 const App = () => {
   const [userData, setUserData] = useContext(UserContext);
@@ -26,7 +27,7 @@ const App = () => {
     } else {
 
       //if token exists in localStorage then use auth to verify token and get user info
-      const userRes = await axios.get('http://localhost:4000/api/users', {
+      const userRes = await axios.get('http://localhost:5000/api/users', {
         headers: { 'x-auth-token': token }
       });
 
@@ -64,18 +65,15 @@ const App = () => {
     <div>
       <Header log={logout} />
       <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signin />} />
-      <Route path="/question" element={<Question />} />
-      <Route path="/answer" element={<Answer />} />
-
-       {/* Passing logout function as a props */}
-      <Route index element={<Home logout={logout} />} />
+        <Route path="/login" element={<LogSign />} />
+        <Route path="/newquestion" element={<NewQuestion />} />
+        <Route path="/answer/:id" element={<Answer />} />
+        <Route path="/" element={<Home />} />
       </Routes>
 
       <Footer />
     </div>
-  )
+  );
 }
 
 export default App

@@ -1,21 +1,28 @@
-.sup {
-    margin-top: 90px;
-    margin-bottom: 30px;
+.header_row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 20px 30px;
+  margin-top: 12px;
 }
-
-.sup > button {
-    padding: 0 10px 0;
-    border: none;
+.blue_button {
+  background-color: #516cf0;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0px 70px;
 }
-
-.sup > button:hover {
-    background-color: orange;
+.header_border {
+  color: black;
+  font-weight: bold;
 }
-
-.beh {
-    margin-right: 620px;
+.search {
+  display: flex;
+  justify-content: space-between;
 }
-
-.mxf {
-    margin: 0 120px;
+.search_bar {
+  width: 35%;
+  border: 0.5px solid;
+  border-radius: 5px;
+  padding-left: 15px;
 }
